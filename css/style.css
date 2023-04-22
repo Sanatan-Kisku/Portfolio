@@ -84,10 +84,24 @@ section{
 
 .home-img img{
   width: 35vw;
-  animation: floatImage 4s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  border: 3px solid var(--main-color);
+  /* animation: floatImage 4s ease-in-out infinite; */
 }
 
-@keyframes floatImage {
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* @keyframes floatImage {
   0% {
     transform: translateY(0);
   }
@@ -97,7 +111,7 @@ section{
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 .home-content h3{
   font-size: 3.2rem;
@@ -171,6 +185,9 @@ span{
 
 .about-img img{
   width: 35vw;
+  border: 3px solid var(--main-color);
+  border-radius: 1.7rem;
+
 }
 
 .heading {
@@ -314,6 +331,13 @@ span{
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+.links{
+  display: grid;
+  grid-template-columns: repeat(2,.5fr);
+  align-items: center;
+  gap: 2.5rem;
 }
 
 /* CONTACT SECTION */
