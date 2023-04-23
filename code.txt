@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanatan Kisku | Frontend Developer</title>
-  <!-- FAVICON -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-  <!-- EMOJI CSS -->
-  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-  <!-- BOX ICONS -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div id="welcome">
-    <h2 class="welcome-header"><span class="multiple-welcome"></span></h2>
-  </div>
-
-   <!-- Header Design -->
-   <header class="header">
+ <!-- Header Design -->
+  <header class="header">
     <a href="#" class="logo">
       Portfolio
     </a>
@@ -225,8 +203,3 @@
 
   <!-- Typed JS -->
   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-  <!-- Local JS -->
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
-</html>

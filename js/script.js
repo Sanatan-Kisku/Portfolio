@@ -1,3 +1,18 @@
+//Welcome Screen
+let welcome = document.querySelector('#welcome')
+let mulWelcome = document.querySelector('.multiple-welcome')
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    mulWelcome.classList.add('fade')
+  }, 2000);
+  setTimeout(() => {
+    welcome.style.top = '-100vh'
+  }, 2000)
+  setTimeout(() => {
+    mulWelcome.style.display = 'none'
+  }, 2000)
+})
+
 // Toggle Icon Navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -49,10 +64,19 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // Typed JS
-const typed = new Typed('.multiple-text', {
+let typed;
+typed = new Typed('.multiple-text', {
   strings: ['Frontend Developer', 'Photographer', 'Painter'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true
 })
+
+typed = new Typed('.multiple-welcome', {
+  strings: ['Namaste'],
+  typeSpeed: 100,
+  fadeOut: true,
+  fadeOutDelay: true
+})
+
