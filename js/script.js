@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mulWelcome.classList.add('fade')
   }, 2000);
   setTimeout(() => {
-    welcome.style.top = '-100vh'
+    welcome.style.top = '-1000vh'
   }, 2000)
   setTimeout(() => {
     mulWelcome.style.display = 'none';
