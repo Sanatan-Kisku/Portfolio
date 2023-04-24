@@ -1,6 +1,7 @@
 //Welcome Screen
 let welcome = document.querySelector('#welcome')
 let mulWelcome = document.querySelector('.multiple-welcome')
+let html = document.querySelector('html')
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     mulWelcome.classList.add('fade')
@@ -9,8 +10,11 @@ window.addEventListener('DOMContentLoaded', () => {
     welcome.style.top = '-100vh'
   }, 2000)
   setTimeout(() => {
-    mulWelcome.style.display = 'none'
+    mulWelcome.style.display = 'none';
   }, 2000)
+  setTimeout(() => {
+    html.style.overflow = 'initial'
+  }, 3000)
 })
 
 // Toggle Icon Navbar
