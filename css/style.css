@@ -64,6 +64,8 @@ span{
   font-size: calc(clamp(3.25em, 5vw, 4.5em) * .75);
   transition: 1s;
   cursor: none;
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .welcome-header{
@@ -282,8 +284,8 @@ span{
 }
 .heading-span{
   background: var(--bg-color);
-  padding: 5px;
-  border-radius: 5%;
+  padding: 2px 5px;
+  border-radius: 10%;
 }
 /* SKILLS SECTION */
 .skills h2{
