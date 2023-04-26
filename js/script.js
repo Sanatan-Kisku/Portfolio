@@ -63,9 +63,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skills-contents, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-content, .skills-bar', { origin: 'right' });
 
 // Typed JS
 let typed;
@@ -84,3 +84,31 @@ typed = new Typed('.multiple-welcome', {
   fadeOutDelay: true
 })
 
+// skill active button
+
+let skillbtn = document.querySelector('.btn-box').querySelectorAll('button');
+let skillcontent = document.querySelector('.skills-contents').querySelectorAll('.content');
+console.log(skillcontent);
+// console.log(skillBtn);
+
+skillbtn.forEach(element => {
+  element.addEventListener('click', function () {
+    skillbtn.forEach(nav => nav.classList.remove('active'))
+    skillcontent.forEach(nav => nav.classList.remove('active'))
+
+
+    this.classList.add('active')
+    if (this.getAttribute('id') == 'btn1') {
+      skillcontent[0].classList.add('active')
+      skillcontent[0].style.transitionDelay = '0.3s'
+    } else if (this.getAttribute('id') == 'btn2') {
+      skillcontent[1].classList.add('active')
+      skillcontent[1].style.transitionDelay = '0.3s'
+    } else if (this.getAttribute('id') == 'btn3') {
+      skillcontent[2].classList.add('active')
+      skillcontent[2].style.transitionDelay = '0.3s'
+    } else {
+      console.log("");
+    }
+  })
+})
