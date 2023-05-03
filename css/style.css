@@ -12,7 +12,7 @@
 }
 
 :root{
-  --bg-color: rgb(128,0,0);
+  --bg-color: #1C1D20;
   --second-bg-color: rgb(245,245,245);
   --text-color: rgb(255,255,255);
   --main-color: rgb(255, 255, 0);
@@ -282,11 +282,11 @@ span{
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+
 .heading-span{
-  background: var(--bg-color);
-  padding: 2px 5px;
-  border-radius: 10%;
+  text-shadow: 0 0 3px #070606, 0 0 5px #0000FF;
 }
+
 /* SKILLS SECTION */
 .skills-bar{
   width: 100%;
@@ -440,6 +440,12 @@ span{
   margin-bottom: 4rem;
 }
 
+.pro_img img{
+  width: 100%;
+  height: auto;
+  margin: 2.5rem 0;
+}
+
 .projects-grid {
   grid-gap: 5rem;
   display: grid;
@@ -515,6 +521,10 @@ span{
   text-transform: none;
 }
 
+.reversed-proj {
+  flex-direction: row-reverse!important;
+}
+
 .stack {
   display: flex;
   gap: 1rem;
@@ -553,83 +563,11 @@ span{
   font-size: 2.8rem;
 }
 
-/* .portfolio-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2.5rem;
+.links a:hover{
+  color: var(--main-color);
+  /* text-shadow: 0 0 3px #070606, 0 0 5px #0000FF; */
 }
 
-.portfolio-container .portfolio-box{
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
-  overflow: hidden;
-  display: flex;
-}
-
-.portfolio-box img {
-  /* width: 100%; 
-  width: 322px;
-  height: 181px;
-  transition: .5s ease;
-}
-
-.portfolio-box:hover img{
-  transform: scale(1.1);
-}
-
-.portfolio-box .portfolio-layer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: .5s ease;
-}
-
-.portfolio-box:hover .portfolio-layer{
-  transform: translateY(0);
-}
-
-.portfolio-layer h4{
-  font-size: 2rem;
-}
-
-.portfolio-layer p{
-  font-size: 1.6rem;
-  margin: .3rem 0 1rem;
-}
-
-.portfolio-layer a{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  background: var(--text-color);
-  border-radius: 50%;
-}
-
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--bg-color);
-}
-
-.links{
-  display: grid;
-  grid-template-columns: repeat(2,.5fr);
-  align-items: center;
-  gap: 2.5rem;
-} */
 
 /* CONTACT SECTION */
 .contact h2{

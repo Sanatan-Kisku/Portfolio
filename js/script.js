@@ -64,8 +64,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .skills-contents, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content, .skills-bar', { origin: 'right' });
+ScrollReveal().reveal('.home-content h1, .about-img, .straight-proj', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content, .skills-bar, .reversed-proj', { origin: 'right' });
 
 // Typed JS
 let typed;
