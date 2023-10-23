@@ -1,6 +1,8 @@
 # Portfolio
 
-This is my personal portfolio website that showcases my skills, projects and contact details. I built it using HTML, CSS and JavaScript. It has a modern and minimalist design with smooth animations and transitions.
+This is my personal portfolio website that showcases my skills, projects and contact details. 
+- I built it using HTML, CSS and JavaScript. 
+- It has a modern and minimalist design with smooth animations and transitions.
 
 ## How to use
 
